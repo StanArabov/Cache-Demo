@@ -26,9 +26,8 @@ PORT={The port on which the application will listen} - (Example value: PORT=8000
 
 - Here it is an example docker-compose file for PostgeSQL server
 
-`version: '3.8'
-
-services:
+```
+version: '3.8'services:
   postgres:
     image: postgres:latest
     container_name: my_postgres
@@ -40,15 +39,14 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
-
-volumes:
-  postgres_data:`
+      - postgres_data:/var/lib/postgresql/datavolumes:
+  postgres_data:
+```
 
 
 4. **Install the dependencies:**
 
    - `npm run i`
-7. **Run the application:**
+5. **Run the application:**
 
    - `npm run start`
