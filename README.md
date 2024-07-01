@@ -2,7 +2,7 @@
 
 **In order to run the appliation you have to complete the following steps:**
 
-1. **Create .env file which shoudh look like this:**
+1. **Create .env file which should look like this:**
 
 PG_HOST={Postgre host} - (Example value: PG_HOST=localhost)
 
